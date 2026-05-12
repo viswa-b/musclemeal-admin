@@ -1,0 +1,24 @@
+.settings-card { background: var(--bg2); border: 1px solid var(--bo); border-radius: var(--RL); padding: 22px; margin-bottom: 18px; }
+.settings-card-title { font-family: var(--FD); font-size: 20px; margin-bottom: 16px; }
+.time-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 14px; }
+.time-hint   { font-size: 12px; color: var(--MU); margin-top: 4px; }
+.preview-box { background: var(--bg3); border-radius: 11px; padding: 22px; text-align: center; }
+.preview-ico  { font-size: 38px; margin-bottom: 10px; }
+.preview-tit  { font-family: var(--FD); font-size: 26px; margin-bottom: 7px; }
+.preview-sub  { color: var(--MU); font-size: 14px; margin-bottom: 11px; }
+.preview-hours { display: inline-flex; align-items: center; gap: 7px; background: var(--bg); color: #fff; padding: 10px 18px; border-radius: 30px; font-size: 14px; font-weight: 700; }
+.preview-time  { color: var(--P); font-family: var(--FD); font-size: 18px; margin-left: 4px; }
+.week-grid    { display: grid; grid-template-columns: repeat(7, 1fr); gap: 7px; margin-top: 14px; }
+.week-day     { background: var(--bg3); border-radius: var(--RR); padding: 11px 5px; text-align: center; border: 1px solid var(--bo); }
+.week-day.today { border-color: var(--P); background: rgba(255,69,0,.08); }
+.week-day-name  { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .4px; color: var(--MU); margin-bottom: 4px; }
+.week-day.today .week-day-name { color: var(--P); }
+.week-day-status { font-size: 11px; font-weight: 600; }
+.week-day-status.open   { color: var(--G); }
+.week-day-status.closed { color: var(--R); }
+.week-day-time { font-size: 10px; color: var(--MU); margin-top: 3px; }
+
+@media (max-width: 900px) {
+  .time-inputs { grid-template-columns: 1fr; }
+  .week-grid   { grid-template-columns: repeat(4, 1fr); }
+}

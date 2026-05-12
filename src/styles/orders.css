@@ -1,0 +1,32 @@
+.orders-filters { display: flex; gap: 7px; margin-bottom: 15px; flex-wrap: wrap; align-items: center; }
+.order-search   { background: var(--bg3); border: 1px solid var(--bo); border-radius: var(--RR); padding: 8px 13px; color: var(--TX); font-size: 13px; outline: none; width: 210px; margin-left: auto; }
+.order-search:focus { border-color: var(--P); }
+.order-search::placeholder { color: var(--MU); }
+.status-flow     { display: flex; gap: 5px; flex-wrap: wrap; }
+.flow-btn        { padding: 4px 10px; border-radius: 7px; font-size: 11px; font-weight: 700; cursor: pointer; border: 1.5px solid; font-family: var(--FB); transition: all .15s; }
+.flow-btn.current { background: var(--P); color: #fff; border-color: var(--P); }
+.flow-btn.next    { background: rgba(0,200,83,.1); color: var(--G); border-color: var(--G); }
+.flow-btn.done    { background: var(--bg3); color: var(--MU); border-color: var(--bo); cursor: default; }
+.flow-btn.cancel  { background: rgba(255,23,68,.1); color: var(--R); border-color: var(--R); }
+.orders-legend { margin-top: 13px; background: var(--bg2); border: 1px solid var(--bo); border-radius: 11px; padding: 11px 15px; font-size: 13px; color: var(--MU); display: flex; gap: 18px; flex-wrap: wrap; }
+
+/* Order Detail Modal */
+.od-section { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--bo); }
+.od-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.od-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: var(--MU); margin-bottom: 10px; }
+.od-item  { background: var(--bg3); border-radius: 10px; padding: 13px; margin-bottom: 8px; }
+.od-item:last-child { margin-bottom: 0; }
+.od-item-row { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 7px; }
+.od-item-name  { font-weight: 700; font-size: 14px; }
+.od-item-price { font-weight: 700; color: var(--P); }
+.od-addons     { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px; }
+.od-addon-chip { background: rgba(255,69,0,.12); color: var(--P); font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 20px; border: 1px solid rgba(255,69,0,.2); }
+.od-note       { font-size: 12px; color: var(--MU); font-style: italic; margin-top: 5px; }
+.od-address-box { background: var(--bg3); border-radius: 10px; padding: 13px; }
+.od-addr-name  { font-weight: 700; font-size: 15px; margin-bottom: 2px; }
+.od-addr-type  { font-size: 11px; font-weight: 600; color: var(--MU); margin-left: 7px; background: var(--bg2); padding: 2px 7px; border-radius: 6px; }
+.od-addr-text  { font-size: 13px; color: var(--MU); margin-top: 3px; }
+.od-addr-phone { font-size: 13px; color: var(--MU); margin-top: 5px; }
+.od-bill-row   { display: flex; justify-content: space-between; padding: 7px 0; font-size: 14px; border-bottom: 1px solid var(--bo); }
+.od-bill-row:last-child { border-bottom: none; font-weight: 800; font-size: 16px; padding-top: 12px; }
+.od-bill-lbl   { color: var(--MU); }

@@ -1,0 +1,28 @@
+.auth-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(255,69,0,.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(41,121,255,.04) 0%, transparent 50%);
+}
+.auth-box {
+  background: var(--bg2);
+  border: 1px solid var(--bo);
+  border-radius: var(--RL);
+  padding: 38px 34px;
+  width: 420px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.5);
+}
+.auth-logo { display: flex; align-items: center; gap: 11px; justify-content: center; margin-bottom: 5px; }
+.auth-logo-icon { width: 44px; height: 44px; background: var(--P); border-radius: 11px; display: flex; align-items: center; justify-content: center; font-family: var(--FD); font-size: 22px; color: #fff; }
+.auth-logo-name { font-family: var(--FD); font-size: 30px; }
+.auth-sub   { text-align: center; color: var(--MU); font-size: 13px; margin-bottom: 26px; }
+.auth-title { font-family: var(--FD); font-size: 24px; margin-bottom: 3px; }
+.auth-desc  { color: var(--MU); font-size: 14px; margin-bottom: 20px; }
+.auth-error { background: rgba(255,23,68,.1); color: var(--R); border: 1px solid rgba(255,23,68,.2); border-radius: var(--RR); padding: 9px 13px; font-size: 13px; font-weight: 600; margin-bottom: 14px; }
+.auth-submit { width: 100%; justify-content: center; padding: 13px; margin-top: 4px; }
+.auth-hint  { text-align: center; font-size: 12px; color: var(--MU); margin-top: 13px; }
+.auth-hint strong { color: var(--TX); }

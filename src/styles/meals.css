@@ -1,0 +1,22 @@
+.meals-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.meal-card  { background: var(--bg2); border: 1px solid var(--bo); border-radius: var(--RL); overflow: hidden; transition: transform .2s; }
+.meal-card:hover { transform: translateY(-2px); }
+.meal-card-img { height: 148px; position: relative; overflow: hidden; background: var(--bg3); }
+.meal-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.meal-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.72) 0%, transparent 60%); opacity: 0; transition: opacity .2s; display: flex; align-items: flex-end; padding: 11px; }
+.meal-card:hover .meal-overlay { opacity: 1; }
+.meal-avail { position: absolute; top: 9px; right: 9px; padding: 3px 9px; border-radius: 20px; font-size: 11px; font-weight: 700; }
+.meal-avail.yes { background: var(--G); color: #fff; }
+.meal-avail.no  { background: var(--R); color: #fff; }
+.meal-card-body { padding: 13px; }
+.meal-card-name { font-weight: 700; font-size: 14px; margin-bottom: 3px; }
+.meal-card-meta { font-size: 12px; color: var(--MU); margin-bottom: 9px; }
+.meal-macros    { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 10px; }
+.macro-tag      { background: var(--bg3); border-radius: 6px; padding: 3px 8px; font-size: 11px; font-weight: 600; color: var(--MU); }
+.meal-card-foot { display: flex; align-items: center; justify-content: space-between; padding-top: 10px; border-top: 1px solid var(--bo); }
+.meal-price     { font-family: var(--FD); font-size: 21px; color: var(--P); }
+.meal-actions   { display: flex; gap: 6px; }
+.meal-add-card  { background: var(--bg2); border: 2px dashed var(--bo); border-radius: var(--RL); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 11px; cursor: pointer; min-height: 250px; transition: border-color .2s; }
+.meal-add-card:hover { border-color: var(--P); }
+.meal-add-icon  { width: 50px; height: 50px; background: rgba(255,69,0,.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--P); font-size: 24px; }
+.meal-filters   { display: flex; gap: 7px; margin-bottom: 18px; flex-wrap: wrap; }

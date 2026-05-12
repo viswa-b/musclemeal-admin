@@ -1,0 +1,4 @@
+.users-stats { display: flex; gap: 14px; margin-bottom: 18px; }
+.users-stat-card { background: var(--bg2); border: 1px solid var(--bo); border-radius: var(--RL); padding: 16px 20px; flex: 1; }
+.users-stat-val  { font-family: var(--FD); font-size: 30px; }
+.users-stat-lbl  { font-size: 13px; color: var(--MU); }
